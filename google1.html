@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Google Homepage</title>
+    <link rel="stylesheet" href="google1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav-links" id="Gmail"><a href="https://mail.google.com/mail/">Gmail</a></li>
+                <li class="nav-links"><a href="">Images</a></li>
+                <li id="Sign_In"><a href="https://mail.google.com/mail/">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="google"> <a href="" id="google_logo"><img
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    </div>
+    <div class="form">
+        <form id="frmSearch" method="get" />
+        <input type="text" id="txtSearch" placeholder="Feel free to Search">
+    </div>
+    <div class="buttons">
+        <input type="submit" value="Google Search" id="google_search">
+        <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+    </div>
+    <script type="text/javascript">document.getElementById('frmSearch').onsubmit = function () {
+            window.location = 'http://www.google.com/search?q=' + document.getElementById("txtSearch").value;
+            return false;
+        }</script>
+    <footer>
+        <ul class="footer-left">
+            <li><a href="https://www.google.co.in/intl/en_in/ads/">Advertising</a></li>
+            <li><a href="https://www.google.co.in/services/">Business</a></li>
+            <li><a href="https://about.google/">About</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+            <li><a href="https://policies.google.com/terms">Terms</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
